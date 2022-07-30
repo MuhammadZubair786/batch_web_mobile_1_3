@@ -1,0 +1,58 @@
+form=>getting input from user
+
+action=>when form submit successfully then move to  which page 
+
+method=>how to data send in backend(post/get)
+
+post => 100% secure 
+get  => url
+
+input=>self closing,inline tag
+type=>text(string,number,special charcter)
+size=>width
+placeholder=>hint text 
+reqired=>must filled field
+minlength=>lazmei itna char ho 
+maxlength=>
+
+data store =>value 
+name =this.value
+
+type=>password
+
+type=>number(size,maxlength,minlength)
+table
+
+
+
+js
+
+js=>.length
+
+if,else if ,else
+
+.addlistener
+dom
+
+
+button=>submit(required,max,min),button,upload
+
+js =>gallery
+
+radio button=>user selection only one option(gender)(required)
+name="same",value defined devloper
+
+checkbox=>slect one ,more then one or not selection(hobbies)=>not required,differnt name
+
+
+fieldset=>p.i
+e
+experience
+
+formik,stepper
+step 
+
+
+
+
+
