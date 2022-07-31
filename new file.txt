@@ -1,0 +1,9 @@
+select
+
+optgroup=>user selection (select country)
+option
+
+accept=>extension
+custom files=>.jpg
+
+button=>submit,button,upload

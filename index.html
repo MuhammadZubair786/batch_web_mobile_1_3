@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./new.html" method="get">
+        <fieldset style="width: 350px;background-color: rgb(99, 93, 93);">
+            <legend align="center">User information</legend>
+            <table>
+                <tr>
+                    <td colspan="2" align="center">
+                        student form
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input type="text" 
+                        size="30" name="fname"
+                         placeholder="enter user name1" 
+                         required minlength="2"
+                            maxlength="5">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last Name </td>
+                    <td>
+                        <input type="text" size="30" name="lname" placeholder="enter user name1" required minlength="2"
+                            maxlength="5">
+                    </td>
+
+                </tr>
+                
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td>
+                        <input type="radio" id="male" name="gender" 
+                        value="male" required>
+                        <label for="male">Male</label>
+
+                        <input type="radio" name="gender" id="female" 
+                        value="female" required>
+                        <label for="female">Female</label>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td>
+                        <input type="checkbox" id="hb1" name="hobbie1" 
+                        value="reading">
+
+                        <label for="hb1">Reading</label>
+
+                        <input type="checkbox" id="hb2" name="hobbie2" 
+                        value="coding">
+
+                        <label for="hb2">Coding</label>
+
+                        <input type="checkbox" id="hb3" name="hobbie3" 
+                        value="writing">
+
+                        <label for="hb3">Writing</label>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        select country
+                    </td>
+                    <td>
+                        <select name="country" id="" multiple size="5" >
+                            <option value="" disabled selected>Select country</option>
+                            <option value="pak">pak</option>
+                            <option value="ind">india</option>
+                            <option value="sa">sa</option>
+                            <option value="pak">pak</option>
+                            <option value="ind">india</option>
+                            <option value="sa">sa</option>    <option value="pak">pak</option>
+                            <option value="ind">india</option>
+                            <option value="sa">sa</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        upload files
+                    </td>
+                    <td>
+                        <input type="file" 
+                        multiple
+                        accept="image/*,.pdf,.docx"    >
+                        
+                    </td>
+                </tr>
+               <tr>
+                <td>Date</td>
+                <td>
+                    <input type="datetime-local"/>
+                </td>
+               </tr>
+
+               <tr>
+                <td>
+                    <input type="reset" name="" id="">
+                   
+                </td>
+                <td>
+                    <input type="image"
+                    width="100"
+                    height="100"
+                    src="data:image/png;base64,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"
+                    >
+
+                   
+                  
+                    <!-- <input type="submit" name="" id=""> -->
+                </td>
+               </tr>
+               <tr>
+                <td>
+                   Message 
+                </td>
+                <td>
+                   <textarea 
+                   name="" 
+                   id=""
+                    cols="5"
+                     rows="5"></textarea>
+                </td>
+               </tr>
+               
+            </table>
+        </fieldset>
+
+
+
+
+        <!-- <fieldset style="width: 100px;"> -->
+        <!-- <legend align="center"> User information</legend> -->
+        <!-- name* 
+            <br>
+            <br>
+            email* <input type="number" size="300" name="emaildata" placeholder="enter user name1" required
+                minlength="2" maxlength="5">
+            <h1>Gender</h1>
+            <input type="radio" name="gender" id="male" required value="male">
+            <label for="male">MALE</label>
+
+            <input type="radio" name="gender" id="female" required value="female">
+            <label for="female">FEMALE</label>
+            <br> -->
+        <!-- </fieldset> -->
+
+
+
+        <!-- <fieldset style="width: 100px;"> -->
+        <!-- <legend align="right"> education</legend> -->
+        <!-- name* <input type="text" size="50" name="fname" placeholder="enter user name1" required minlength="2"
+                maxlength="5">
+            <br>
+            <br>
+            email* <input type="number" size="300" name="emaildata" placeholder="enter user name1" required
+                minlength="2" maxlength="5">
+            <h1>Gender</h1>
+            <input type="radio" name="gender" id="male" required value="male">
+            <label for="male">MALE</label>
+
+            <input type="radio" name="gender" id="female" required value="female">
+            <label for="female">FEMALE</label>
+            <br> -->
+        <!-- </fieldset> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <input type="submit" value="submit form "> -->
+
+    </form>
+</body>
+
+</html>
