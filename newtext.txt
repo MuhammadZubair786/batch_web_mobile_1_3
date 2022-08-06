@@ -1,0 +1,65 @@
+extra markup
+doctype
+
+id=>unique=>cnic=>#idname=>call =>id="idname"
+class="c1 c3"
+class=>repeated =>.classname=>call
+
+h1=>5 tag=>tag name
+h1=>3 no tag=>id
+h1=>3,5=>class
+
+same page linking=>a
+id(c)=>p3,p4 this 
+class=>repeated
+
+iframe=>host on internet and you use in your website 
+dymaic=>src
+
+google map=>goole
+youtube 
+
+meta=>seo
+author,expire,keywords
+
+github=>
+github =>code =>repo
+
+admin
+braches
+f=>1 gb
+b=>1.5 gb 
+pull,push
+
+public repo
+
+1) git account
+2) git scm download =>git scm,git desktop
+3) folder git connect => git init=>inlization in flder(.git)=>hidden 
+4) git status =>folder stage => untracked,commit when tracked 
+5) git add filename.ext folder/filename.ext =>specfic file add 
+6) git add .=>all files and folder
+7) git commit -m "header changing"=>
+8) master =>default branch
+9) git remote add origin url=>git folder and repo connect 
+10)git push -u origin master 
+11)gh-pages
+
+https://saylani-massit-hyderbad.github.io/classnew1/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
