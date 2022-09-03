@@ -1,0 +1,30 @@
+div,span
+width,height
+
+back-image : linear-gardient(deg/to side,color,color)
+
+margin: space between outer space and border
+margin : tb rl
+margin : 0px auto
+
+margin : value ( four side set margin)
+
+
+padding: space b/w text and boder
+TRBL
+border
+width
+color
+style
+
+box shadow : lr tb blur color
+border-radius:
+
+tlbr  bltr
+
+
+
+TB RL
+
+
+

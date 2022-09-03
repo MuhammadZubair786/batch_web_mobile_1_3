@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.class1{
+    color: rgb(239, 230, 230);
+    background-color: black;
+ /* background-color: red; */
+    /* background-image: linear-gradient(to bottom,red,yellow); */
+    width: 400px;
+    /* min-width: 400px;
+    max-width: 600px; */
+    /* min-height: 10px; */
+    max-height:100px ;
+    /* overflow: scroll; */
+    /* overflow-x: scroll; */
+    margin: 0px auto;
+    padding: 10px 20px;
+    text-align: justify;
+    /* border-width: 10px 0PX 0PX 0PX;
+    border-style: inset ;
+    border-color: yellow; */
+    /* border-top-width: 2PX;
+    border-top-color: purple;
+    border-top-style: solid; */
+
+    /* border-top: 10px solid purple; */
+
+    /* border: 10px solid blueviolet; */
+    /* height: 200px; */
+    /* border: 4px solid red; */
+    box-shadow: -139px 117px 202px grey;
+    /* border-radius: 20px 10px; */
+   /* border-radius: 100px ; */
+   border-bottom-right-radius: 100px;
+    /* border-image: url('./download.jpg') 50 round; */
+
+
+}
