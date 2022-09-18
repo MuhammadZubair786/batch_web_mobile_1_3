@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ol{
+    margin-left: 60px;
+    margin-top: 10px;
+    /* list-style-type:decimal-leading-zero;
+    list-style-image: url("./home.png");
+    list-style-position: inside; */
+    list-style:  url("./home.png") circle inside;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-fill-color: rgb(17, 255, 0);
+    -webkit-text-stroke-color: purple;
+
+    
+
+}
+table{
+    border: 1px solid red;
+    background-color: bisque;
+    color: blue;
+    margin: 10px auto;
+    text-align: center;
+    text-shadow: 10px 2px 10px red;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-fill-color: rgb(17, 255, 0);
+    -webkit-text-stroke-color: purple;
+    border-collapse: collapse;
+    width: 200px;
+    border-radius: 20px;
+    
+}
+tr>td{
+    border-top: 1px solid red;
+    letter-spacing: 2px;
+}
+tr{
+    text-transform: lowercase;
+    
+    
+}
+tr:hover{
+    background-color: rgb(193, 189, 189);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: green;
+}
+tr:first-child{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+tr:first-child:hover{
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: green;
+}
