@@ -1,0 +1,88 @@
+table{
+    border: 1PX SOLID rgb(241, 234, 234);
+    /* border-collapse: collapse; */
+    border-spacing: 10px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(89, 255, 0);
+    border-radius: 20px;
+    box-shadow: 1px 20px 100px rgb(195, 147, 147);
+}
+tr:first-child{
+    height: 50px;
+}
+td{
+    border: 1px solid rgb(231, 107, 12);
+    width: 100px;
+}
+
+/* TR:first-child{
+        border: 1PX SOLID rgb(0, 195, 255);
+        empty-cells: hide;
+        background-color: aqua;
+} */
+/* .NEW{
+    border: 1PX SOLID rgb(0, 255, 106);
+    empty-cells: hide;
+    background-color: rgb(255, 166, 0);
+
+} */
+
+input{
+    height: 20px;
+    background-image: url('./gmail.png');
+    background-repeat: no-repeat;
+   background-size: 15px 15px;
+   background-position:10px 2px;
+   text-align: right;
+   padding-left: 22px;
+   background-color: yellow;
+   border: 0px ;
+  border-bottom: 2px solid red ;
+  outline: none;
+}
+input:hover{
+    background-color: rgb(0, 255, 140);
+}
+
+input:focus{
+    background-color: pink;
+}
+button{
+    background-color: red;
+    color: white;
+    border: 0px;
+     border-radius: 20px;
+     box-shadow: 10px 10px 50px rgb(44, 207, 8);
+}
+input:active{
+    background-color: black;
+}
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    cursor: progress;
+}
+
+fieldset{
+    background-image: linear-gradient(135deg,rgb(242, 242, 15),rgb(13, 225, 13));
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    border: 1px solid gainsboro;
+    box-shadow: 10px 10px 90px gray;
+}
+legend{
+    background-color: aqua;
+    padding: 8px;
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid red;
+    text-shadow: 4px 5px 10px green;
+}
+  
