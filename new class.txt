@@ -1,0 +1,82 @@
+1)universal sel:*
+
+2)type sel:h1,h3,p
+
+3)class sel:.classname
+
+4)id sel=>#idname
+
+5)child sel=>tag1>tag2
+
+6)descandant sel: tag1 tag2
+
+7)adjacent sel : tag1+tag2
+
+8)general sel:tag1 ~tag2
+color:
+
+rgb,
+rgba:color =>transpanet color 
+r=>0 to 255
+
+rgba()
+
+alpha
+
+0 to 1
+
+
+hexa,
+#ff
+00
+ff
+opacity
+
+huge:0 to 360
+hsl:(huge,stauration 50%(grey),lightness(50)%)
+
+@font-face{
+font-family:"",
+src:url("path")
+}
+
+width,height=>%
+font-size:
+
+px,em,rem
+1em : 16px
+2PX
+
+
+13 AUGUST 2021
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
