@@ -1,113 +1,84 @@
-// var arr =[1,2,3,45,35,56,78,45]
+// var arr = ["mONDAY", "TUESDAY", "WED", "thur", "fri", "sat", "sun"]
+// var data = prompt("enter range with in  0 TO 6")
+// switch (data) {
+//     case "0":
+//         console.log(arr[0])
+//         break
 
-// // arr.splice(3,3)
-// // arr.splice(3,0,"smit",23,45)
-// // console.log(arr)
+//     case "1":
+//         console.log(arr[1])
+//         break
+//     case "2":
+//         console.log(arr[2])
+//         break
+//     case "3":
+//         console.log(arr[3])
+//         break
+//     case "4":
+//         console.log(arr[4])
+//         break
+//     case "5":
+//         console.log(arr[5])
+//         break
+//     case "6":
+//         console.log(arr[6])
+//         break
+    
 
-// arr.push("smit")
-// console.log(arr)
-
-
-// arr.unshift("new course")
-// console.log(arr)
-
-// arr.pop()
-// console.log(arr)
-
-
-// arr.shift()
-// console.log(arr)
-
-
-// arr.splice(5,1)
-// console.log(arr)
-
-// arr.splice(3,2,"hello1","apple","new user")
-// console.log(arr)
-
-// arr.sort()
-// console.log(arr)
-
-// var chk1= arr.indexOf("hell")
-// console.log(chk1)
-
-// var a=[2,3,45,45,56,45,67,45]
-// // var chk1 = a.lastIndexOf(45)
-// // console.log(chk1)
-
-// var chk1=a.indexOf(45)
-
-// var chk2=a.indexOf(45,chk1+1)
-// console.log(chk2)
-
-// var chk3=a.indexOf(45,chk2+1)
-// console.log(chk3)
-
-// var data = a.includes(67)
-// console.log(data)
-
-// var new1 = a.join(" ")
-// console.log(typeof new1)
-
-// var c1 = "hello world"
-// var data = c1.split(" ")
-// console.log(data)
-
-// console.log(a.length)
-// a.length=3
-// console.log(a)
-
-// var a=[2,3,4,5,6,5,3,4,5,6,7,8,7,6,6,6,6]
-// if(a[0]==5){
-//     console.log("get")
-// }
-// if(a[1]==5){
-//     console.log("get")
-// }
-// if(a[2]==5){
-//     console.log("get")
-// }
-// if(a[3]==5){
-//     console.log("get")
-// }
-// if(a[4]==5){
-//     console.log("get")
-// }
-// if(a[5]==5){
-//     console.log("get")
+//     default:
+//         console.log("iNCORRECT VALUE")
 // }
 
-// var inp =prompt("enter data ")
-// if(inp.length>0){
-//     for(var i=0;i<parseInt(inp);i++){
-//         document.write("VALUE :"+i+"<BR>")
+// var arr =[1,2,3,4,5,6,7,8,9,10,15,45,34,23,25]
+// // arr=[5,10,15,25,45]
+
+// for(var i=0;i<arr.length;i++){
+   
+//     if(arr[i]%5==0){
+//         console.log(arr[i]+"number is divide by 5")
 //     }
+//     if(arr[i]%5!=0){
+//         arr.splice(i,1)
+//         i=i-1
 
-// }
-// else{
-//     for(var i=0;i<10;i++){
-//         document.write("VALUE :"+i+"<BR>")
 //     }
 // }
-var arr =[]
+// document.write(arr+"<br>")
+
+
+
+
+// for(var k of arr){
+//     document.write(k+"<br>")
+// }
+
+// var inp = prompt("Enter value")
+// for(var i=0;i<inp.length;i++){
+//     document.write("Ascii Value of "+inp[i]+" is : "
+//             +inp.charCodeAt(i)+"<br>")
+
+// }
+
+cap=[]
+small=[]
+num=[]
 for(var i=0;i<10;i++){
-    var data = prompt("enter data")
-    if(data==""){
-        document.write("empty value")
-        break;
+    var data = prompt("Enter value")
+    if(data.charCodeAt(0)>=65 && data.charCodeAt(0)<=90){
+       
+        cap.push(data)
     }
-    else{
-    arr.push(data)
-}}
+    if(data.charCodeAt(0)>=97 && data.charCodeAt(0)<=122){
+       
+        small.push(data)
+    }
+    if(data.charCodeAt(0)>=48 && data.charCodeAt(0)<=57){
+       
+        num.push(data)
+    }
+}
 
-document.write(arr)
-
-
-
-
-
-
-
-
-
+console.log(cap)
+console.log(small)
+console.log(num)
 
