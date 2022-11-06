@@ -1,84 +1,153 @@
-// var arr = ["mONDAY", "TUESDAY", "WED", "thur", "fri", "sat", "sun"]
-// var data = prompt("enter range with in  0 TO 6")
-// switch (data) {
-//     case "0":
-//         console.log(arr[0])
-//         break
+// var vist =10
+// alert("You vist "+(vist+1)+"Time")
 
-//     case "1":
-//         console.log(arr[1])
-//         break
-//     case "2":
-//         console.log(arr[2])
-//         break
-//     case "3":
-//         console.log(arr[3])
-//         break
-//     case "4":
-//         console.log(arr[4])
-//         break
-//     case "5":
-//         console.log(arr[5])
-//         break
-//     case "6":
-//         console.log(arr[6])
-//         break
-    
+// var inp=parseInt(prompt("Enter dob"))
+// document.write("Brith Year "+inp)
+// document.write("<br>type of brith year  "+typeof(inp))
 
-//     default:
-//         console.log("iNCORRECT VALUE")
-// }
+// var name=prompt("enter name")
+// var qty = prompt("enter qty")
+// var p_title = prompt("enter p_title")
 
-// var arr =[1,2,3,4,5,6,7,8,9,10,15,45,34,23,25]
-// // arr=[5,10,15,25,45]
-
-// for(var i=0;i<arr.length;i++){
-   
-//     if(arr[i]%5==0){
-//         console.log(arr[i]+"number is divide by 5")
-//     }
-//     if(arr[i]%5!=0){
-//         arr.splice(i,1)
-//         i=i-1
-
-//     }
-// }
-// document.write(arr+"<br>")
+// document.write(name +" order  "+ qty+ " "+p_title+" on xyz store")
 
 
+// var a=10,b=5,c=20;
+
+// task 2
+// legal variable
+// abc1
+// _abc
+// hello$
+// g$
+
+// illelgal variable
+// abc-1
+// -abc
+// ?jsjs
+
+// document.write("<h1>Rules for naming JS variables</h1>")
+// document.write("Variable names can only contain alphabets, numbers,$ and _.")
+
+// var inp1=parseInt(prompt("enter value"))
+// var inp2=parseInt(prompt("enter value"))
+// var sum = inp1+inp2
+
+// document.write("sum of "+inp1+" and "+ inp2+ " is "+sum)
+
+// // task 2
+// var sub = inp1-inp2
+// document.write("sub of "+inp1+" and "+ inp2+ " is "+sum)
 
 
-// for(var k of arr){
-//     document.write(k+"<br>")
-// }
+// var a
+// document.write(a)
+// a=5
+// document.write("<br>" + a)
+// a=++a
+// document.write("<br>" + a)
+// a=a+7
 
-// var inp = prompt("Enter value")
-// for(var i=0;i<inp.length;i++){
-//     document.write("Ascii Value of "+inp[i]+" is : "
-//             +inp.charCodeAt(i)+"<br>")
+// var ticket = 600
+// var buy_ticket= prompt("enter ticket")
+// var tprice= buy_ticket*ticket
 
-// }
+// document.write("Total cost To Buy "+ buy_ticket+" tickets to move is "+tprice)
 
-cap=[]
-small=[]
-num=[]
-for(var i=0;i<10;i++){
-    var data = prompt("Enter value")
-    if(data.charCodeAt(0)>=65 && data.charCodeAt(0)<=90){
-       
-        cap.push(data)
+// var tabel = prompt("Enter table")
+// document.write(tabel +" * "+1+"="+tabel*1)
+// document.write("<br>"+tabel +" * "+2+"="+tabel*2)
+
+// var cel = parseInt(prompt("Enter cel"))
+
+// var res = (cel* 9/5)+32
+
+// // console.log(res)
+// document.write(res+"<sup>0</sup>")
+
+// var fer =  parseInt(prompt("Enter fer"))
+
+// var res1 = (fer-32)*5/9
+
+// console.log(res1)
+
+// var inp = parseInt(prompt("enter number"))
+// var res = ((inp+5)*10)/2
+// console.log(res)
+
+var eng = parseInt(prompt("Enter Eng marks"))
+if(eng>=0 && eng<=100){
+    var urdu =parseInt(prompt("Enter urdu marks"))
+    if(urdu>=0 && urdu<=100){
+       var math =parseInt( prompt("Enter urdu marks"))
+
+       if(math>=0 && math<=100){
+        console.log("all good")
+
+        var res = eng+urdu+math
+        var per = res/300*100
+
+        console.log(res)
+
+        document.write("<table  class='c1'>")
+        document.write("<tr class='c2'><th class='c2'>Subject</th>")
+        document.write("<th class='c2'>Total marks</th>")
+        document.write("<th class='c2'>Obt marks</th>")
+        document.write("<th class='c2'>Percentage</th>")
+        document.write("</tr>")
+
+        document.write("<tr><th class='c2'>Eng</th>")
+        document.write("<th class='c2'>100</th>")
+        document.write("<th class='c2'>"+eng+"</th>")
+        document.write("<th class='c2'>"+eng+"%</th>")
+        document.write("</tr>")
+
+        document.write("<tr><th>Urdu</th>")
+        document.write("<th>100</th>")
+        document.write("<th>"+urdu+"</th>")
+        document.write("<th>"+urdu+"%</th>")
+        document.write("</tr>")
+
+        document.write("<tr><th>Math</th>")
+        document.write("<th>100</th>")
+        document.write("<th>"+math+"</th>")
+        document.write("<th>"+math+"%</th>")
+        document.write("</tr>")
+
+        document.write("<tr><th></th>")
+        document.write("<th>300</th>")
+        document.write("<th>"+res+"</th>")
+        document.write("<th>"+per+"%</th>")
+        document.write("</tr>")
+
+
+
+        document.write("</table>")
+
+
+
+
+
+
+
+       }
+       else{
+        document.write("Enter math correct number")
+
+       }
+
     }
-    if(data.charCodeAt(0)>=97 && data.charCodeAt(0)<=122){
-       
-        small.push(data)
-    }
-    if(data.charCodeAt(0)>=48 && data.charCodeAt(0)<=57){
-       
-        num.push(data)
+    else{
+        document.write("Enter urdu correct number")
+
     }
 }
+else{
+    document.write("Enter eng correct number")
+}
 
-console.log(cap)
-console.log(small)
-console.log(num)
+
+
+
+
 
