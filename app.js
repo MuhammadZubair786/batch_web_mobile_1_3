@@ -1,105 +1,113 @@
-// var inputOne = parseInt(prompt("Enter First Number"))
-// var inputTwo = parseInt(prompt("Enter Second Number"))
-// var inputThree = parseInt(prompt("Enter Third Number"))
-// if (inputOne > inputTwo && inputOne > inputThree) {
-//     console.log(inputOne + " input one  is greater")
-//     if (inputTwo > inputThree) {
-//         console.log(inputTwo + " is medium")
-//         console.log(inputThree + " is small")
-//     }
-//     else if (inputTwo == inputThree) {
-//         console.log(" 2 and 3 equal")
-//     }
-//     else {
-//         console.log(inputThree + " is medium")
-//         console.log(inputTwo + " is small")
+// var arr =[1,2,3,45,35,56,78,45]
 
-//     }
+// // arr.splice(3,3)
+// // arr.splice(3,0,"smit",23,45)
+// // console.log(arr)
+
+// arr.push("smit")
+// console.log(arr)
+
+
+// arr.unshift("new course")
+// console.log(arr)
+
+// arr.pop()
+// console.log(arr)
+
+
+// arr.shift()
+// console.log(arr)
+
+
+// arr.splice(5,1)
+// console.log(arr)
+
+// arr.splice(3,2,"hello1","apple","new user")
+// console.log(arr)
+
+// arr.sort()
+// console.log(arr)
+
+// var chk1= arr.indexOf("hell")
+// console.log(chk1)
+
+// var a=[2,3,45,45,56,45,67,45]
+// // var chk1 = a.lastIndexOf(45)
+// // console.log(chk1)
+
+// var chk1=a.indexOf(45)
+
+// var chk2=a.indexOf(45,chk1+1)
+// console.log(chk2)
+
+// var chk3=a.indexOf(45,chk2+1)
+// console.log(chk3)
+
+// var data = a.includes(67)
+// console.log(data)
+
+// var new1 = a.join(" ")
+// console.log(typeof new1)
+
+// var c1 = "hello world"
+// var data = c1.split(" ")
+// console.log(data)
+
+// console.log(a.length)
+// a.length=3
+// console.log(a)
+
+// var a=[2,3,4,5,6,5,3,4,5,6,7,8,7,6,6,6,6]
+// if(a[0]==5){
+//     console.log("get")
 // }
-// else if (inputTwo > inputOne && inputTwo > inputThree) {
-//     console.log(inputTwo + "Input 2 is greater")
-//     if (inputOne > inputThree) {
-//         console.log(inputOne + " is medium")
-//         console.log(inputThree + " is small")
-//     }
-//     else if (inputOne == inputThree) {
-//         console.log("one and 3 are equal")
-
-//     }
-//     else {
-//         console.log(inputThree + " is medium")
-//         console.log(inputOne + " is small")
-
-//     }
-
+// if(a[1]==5){
+//     console.log("get")
 // }
-// else if (inputThree > inputOne && inputThree > inputTwo) {
-//     console.log(inputThree + " is greater")
-//     if (inputOne > inputTwo) {
-//         console.log(inputOne + " is medium")
-//         console.log(inputTwo + " is small")
-//     }
-//     else if (inputOne == inputTwo) {
-//         console.log("1 and 2 equal")
-
-//     }
-//     else {
-//         console.log(inputTwo + " is medium")
-//         console.log(inputOne + " is small")
-//     }
+// if(a[2]==5){
+//     console.log("get")
 // }
-// else if (inputOne == inputTwo && inputOne == inputThree) {
-//     console.log("all equal")
+// if(a[3]==5){
+//     console.log("get")
 // }
-// else if (inputOne == inputTwo) {
-//     if (inputOne > inputThree) {
-//         console.log("2 values equal and gr")
-//         console.log(inputThree + "is small")
-//     }
-//     else {
-//         console.log(inputThree + "is greater")
-//         console.log("2 values equal small")
-
-
-//     }
+// if(a[4]==5){
+//     console.log("get")
 // }
-// else if (inputThree == inputTwo) {
-//     if (inputThree > inputOne) {
-//         console.log("2 values equal and gr")
-//         console.log(inputOne + "is small")
-//     }
-//     else {
-//         console.log(inputOne + "is greater")
-//         console.log("2 values equal small")
-
-
-//     }
-// }
-// else if (inputOne == inputThree) {
-//     if (inputOne > inputTwo) {
-//         console.log("2 values equal and gr")
-//         console.log(inputTwo + "is small")
-//     }
-//     else {
-//         console.log(inputTwo + "is greater")
-//         console.log("2 values equal small")
-
-
-//     }
-// }
-// else {
-//     console.log("enter correct data")
+// if(a[5]==5){
+//     console.log("get")
 // }
 
-var user_array = [1,2,3,"asad","grand entry test","ali","grand entry test","grand entry test",true]
-console.log(user_array)
-console.log(user_array[4])
-console.log(user_array.length)
-// user_array.push("smit",23,"hello world")
-user_array.push("smit",23,"hello world")
-console.log(user_array)
-console.log(user_array)
-console.log(user_array.pop())
-console.log(user_array)
-console.log(user_array.indexOf("grand entry test",5))
-console.log(user_array.slice(3,6))
+// var inp =prompt("enter data ")
+// if(inp.length>0){
+//     for(var i=0;i<parseInt(inp);i++){
+//         document.write("VALUE :"+i+"<BR>")
+//     }
+
+// }
+// else{
+//     for(var i=0;i<10;i++){
+//         document.write("VALUE :"+i+"<BR>")
+//     }
+// }
+var arr =[]
+for(var i=0;i<10;i++){
+    var data = prompt("enter data")
+    if(data==""){
+        document.write("empty value")
+        break;
+    }
+    else{
+    arr.push(data)
+}}
+
+document.write(arr)
+
+
+
+
+
+
+
+
+
+
