@@ -1,93 +1,105 @@
-// a=1
-// var b = --a
-// // a+b
-// console.log(b,a)//2,1
-//1,1
-//0,0
-//1,0 
-//0,1
-//1,2
-//2,1
-//0,2
-//2,3
-//2,2
-// a=5
-// b= a + ++a + a-- + ++a
-// // 5 + 6 + 6 + 6
-// console.log(b,a)//5,1
-// a=4
-// b=5
-// var c =  a +  ++b  -  --a   +  a++  +  b++
-//         // 4  + 6  -  3  + 3  + 6
-// console.log(c)
+// var inputOne = parseInt(prompt("Enter First Number"))
+// var inputTwo = parseInt(prompt("Enter Second Number"))
+// var inputThree = parseInt(prompt("Enter Third Number"))
+// if (inputOne > inputTwo && inputOne > inputThree) {
+//     console.log(inputOne + " input one  is greater")
+//     if (inputTwo > inputThree) {
+//         console.log(inputTwo + " is medium")
+//         console.log(inputThree + " is small")
+//     }
+//     else if (inputTwo == inputThree) {
+//         console.log(" 2 and 3 equal")
+//     }
+//     else {
+//         console.log(inputThree + " is medium")
+//         console.log(inputTwo + " is small")
 
-// var inp = prompt("Enter Your Name","HR")
-// console.log(inp)
-
-// var inp1 = prompt("Enter Your age","20")
-// console.log(inp1)
-
-// var inp2 = prompt("Enter Your Salary","1000")
-// console.log(inp2)
-
-// var num1 =parseInt(prompt("Enter Number 1"))
-// var num2 = parseInt(prompt("Enter Number 2"))
-// var sum = num1+num2
-// // console.log('sum of a (' + num1 + " ) " + "b" + "( " + num2 +") is :"+ sum )
-// console.log("Value of a is :"+ num1)
-// console.log("Value of a is :"+ num2)
-// console.log("sum :"+ sum)
-
-
-// greater 
-// user even,odd,%
-
-// var number = "10"
-// if (number > 0) {
-//     console.log("number is positive ")
+//     }
 // }
-// else if(number<0){
-//     console.log("number is negative ")
-// }
+// else if (inputTwo > inputOne && inputTwo > inputThree) {
+//     console.log(inputTwo + "Input 2 is greater")
+//     if (inputOne > inputThree) {
+//         console.log(inputOne + " is medium")
+//         console.log(inputThree + " is small")
+//     }
+//     else if (inputOne == inputThree) {
+//         console.log("one and 3 are equal")
 
+//     }
+//     else {
+//         console.log(inputThree + " is medium")
+//         console.log(inputOne + " is small")
+
+//     }
+
+// }
+// else if (inputThree > inputOne && inputThree > inputTwo) {
+//     console.log(inputThree + " is greater")
+//     if (inputOne > inputTwo) {
+//         console.log(inputOne + " is medium")
+//         console.log(inputTwo + " is small")
+//     }
+//     else if (inputOne == inputTwo) {
+//         console.log("1 and 2 equal")
+
+//     }
+//     else {
+//         console.log(inputTwo + " is medium")
+//         console.log(inputOne + " is small")
+//     }
+// }
+// else if (inputOne == inputTwo && inputOne == inputThree) {
+//     console.log("all equal")
+// }
+// else if (inputOne == inputTwo) {
+//     if (inputOne > inputThree) {
+//         console.log("2 values equal and gr")
+//         console.log(inputThree + "is small")
+//     }
+//     else {
+//         console.log(inputThree + "is greater")
+//         console.log("2 values equal small")
+
+
+//     }
+// }
+// else if (inputThree == inputTwo) {
+//     if (inputThree > inputOne) {
+//         console.log("2 values equal and gr")
+//         console.log(inputOne + "is small")
+//     }
+//     else {
+//         console.log(inputOne + "is greater")
+//         console.log("2 values equal small")
+
+
+//     }
+// }
+// else if (inputOne == inputThree) {
+//     if (inputOne > inputTwo) {
+//         console.log("2 values equal and gr")
+//         console.log(inputTwo + "is small")
+//     }
+//     else {
+//         console.log(inputTwo + "is greater")
+//         console.log("2 values equal small")
+
+
+//     }
+// }
 // else {
-//     console.log("zero ")
+//     console.log("enter correct data")
 // }
 
-// var a=true
-// console.log(typeof a)
-
-// inp = parseInt(prompt("EnteR nUMBER"))
-// if(inp%2==0){
-//     console.log("number is Even")
-// }
-// else{
-//     console.log("Number iS odd")
-
-// }
-
-// document.write("<h1 style='color:red'><u>Hello World</u></h1>")
-// document.write("<h1 style='color:red'><u>Hello World</u></h1>")
-// document.write("<h1 style='color:red'><u>Hello World</u></h1>")
-
-var name1= prompt("Enter Data ")
-var qty = prompt("enter qty")
-var prod = prompt("enter pro")
-document.write(name1+"order jhgdhgehd"+qty+" "+prod)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var user_array = [1,2,3,"asad","grand entry test","ali","grand entry test","grand entry test",true]
+console.log(user_array)
+console.log(user_array[4])
+console.log(user_array.length)
+// user_array.push("smit",23,"hello world")
+user_array.push("smit",23,"hello world")
+console.log(user_array)
+console.log(user_array)
+console.log(user_array.pop())
+console.log(user_array)
+console.log(user_array.indexOf("grand entry test",5))
+console.log(user_array.slice(3,6))
