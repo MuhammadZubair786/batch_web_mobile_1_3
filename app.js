@@ -1,98 +1,79 @@
-// for(var i=0;i<=10;i++){
-//     for(var j=0;j<=10;j++){
-//         if(i==0 || i==10 || j==0 || j==10){
-//         document.write("*")
-//         }
-//         else{
-//             document.write("&nbsp;&nbsp;")
-//         }
-//     }
-//     document.write("<br>")
+// i=0
+// while(i<=10){
+//     console.log(i)
+//     i++
 // }
 
-// for(var i=0;i<10;i=i+2){
-//     for(var j=10;j>i;j--){
-//         document.write("&nbsp;")
-//     }
-//     for(var k=i+1;k>0;k--){
-//         document.write("*")
-//     }
-
-//     document.write("<br>")
-// }
-// for(i=10;i>0;i=i-2){
-//     if (i!=10){
-//     for(var j=10;j>=i-1;j--){
-//         document.write("&nbsp")
-//     }
-//     for(var k=i-1;k>0;k--){
-//         document.write("*")
-//     }
-//     document.write("<br>")
+// array=[]
+// i="Y"
+// while(i.toUpperCase()=="Y" ){
+//    data = prompt("Enter data ")
+//    array.push(data)
+//    i = prompt("If you nwant to run again press  y ") 
 // }
 
-// }
+// console.log(array)
 
-
-// for(var k=i+1;k>0;k--){
-//     document.write("*")
-// }
-
-// for(var a=0;a<10;a++){
-
-//     for(var b=a;b<10;b++){
-//         document.write("&nbsp;&nbsp")
+// var i=0
+// while(i==0){
+//     inp1= parseInt(prompt("Enter 1 number : "))
+//     inp2=  parseInt(prompt("Enter 2 number : "))
+//     op = prompt("Enter Op : +,-,*,/,%")
+//     if(op=="+"){
+//         alert("Value of 1 : "+inp1+"\n Value of 2 : "+inp2+"\n Result : "+(inp1+inp2))
 //     }
-//     for(var c=0;c<a*2-1;c++){
-//         document.write("*")
+//     else  if(op=="-"){
+//         alert("Value of 1 : "+inp1+"\n Value of 2 : "+inp2+"\n Result : "+(inp1-inp2))
 //     }
-//     document.write("<br>")
-// }
-// for(var a=10;a>0;a--){
-
-//     for(var b=a;b<10;b++){
-//         document.write("&nbsp;&nbsp")
+//     else{
+//         console.log("invalid op")
 //     }
-//     for(var c=0;c<a*2-1;c++){
-//         document.write("*")
-//     }
-//     document.write("<br>")
+//     i=prompt("enter 0 if run again ")
 // }
 
 
-var array = [
-    [1, 2, 6, 3, 6, 8, 9, 6],
-    [4, 5, 6],
-    6,
-    [4, 5, 6, 6],
-    10,
-    [2, 3, 4],
-    6,
-    10
-]
+// i = 0
+// COUNTRY = []
+// while (i == 0) {
+//     data = prompt("Enter Dtaa ")
+//     data1 = prompt("Enter Dtaa ")
+//     COUNTRY.push(data)
+//     COUNTRY.push(data1)
 
-for (var i = 0; i < array.length; i++) {
-    var chk = 0; //chk element 
+//     i = prompt("enter value 0 for run again")
+// }
 
-    if (array[i].length == undefined) {
-        console.log("call")
-        if (array[i] == 6) {
-            document.write((chk + 1 + "<br>"))
-        }
-        else {
-            document.write(0 + "<br>")
-        }
-    }
-    else {
-        console.log(array[i].length)
-        for (var j = 0; j < array[i].length; j++) {
-            if (array[i][j] == 6) {
-                chk += 1
-            }
-        }
-        document.write(" <br>" + chk + "<br>")
-    }
+// document.write("<select>")
+// i = 0
+// while (i < COUNTRY.length) {
+//     document.write("<Option>" + COUNTRY[i] + "</option>")
+//     i++
+// }
+// document.write("</select>")
 
 
+// i = 0
+// while (i == 0) {
+//     var gennumber = (Math.random() * 100).toFixed()
+//     alert(gennumber)
+//     var inp = prompt("Enter Number ")
+//     if (inp == gennumber) {
+//         console.log("win")
+//         break
+//     }
 
-}
+// }
+
+var arr = []
+arr[0]=1
+arr[2]="asad"
+arr[101]="smit"
+console.log(arr)
+
+
+
+
+
+
+
+
