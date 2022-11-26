@@ -1,79 +1,62 @@
-// i=0
-// while(i<=10){
+// var i=0
+// do{
+//     console.log(i)
+// }while(i==10)
+
+// var i=0
+// do{
 //     console.log(i)
 //     i++
 // }
+// while(i<=10)
 
-// array=[]
-// i="Y"
-// while(i.toUpperCase()=="Y" ){
-//    data = prompt("Enter data ")
-//    array.push(data)
-//    i = prompt("If you nwant to run again press  y ") 
-// }
+// array =[1,2,3]
+// i=2;
+// do{
+//     console.log(array[i])//error
+//     i++
+// }while(i>array.length)
 
+// 1 to 10
+// even number
+
+// tenary op:
+// ? :
+
+// var i=30
+// i==10 ? console.log("Hello") : console.log("no")
+
+// button : 
+
+var a = "old smit hydearbad   lanuch new flutter  old course "
+// a=a[0].replaceAll("Lorem","smit")
+// console.log(a)
+// ind = a.indexOf("asad",4)
+// console.log(ind)
+
+// var data = a.substring(0,ind)+"smit"+a.substring(25)
+// console.log(data)
+// a=a.replaceAll("old","new")
+// console.log(a)
+// var b = a.indexOf("old",3)
+// console.log(b)
+// var data = a.substring(0,b)+"new"+a.substring(b+3)
+// console.log(data)
+
+// var array=["asad","ali","zubair","saqib","asad","asad","khan"]
+// array = array.join()
+// console.log(array)
+// array = array.replaceAll("asad","smit")
+// console.log(array)
+// array=array.split(",")
 // console.log(array)
 
-// var i=0
-// while(i==0){
-//     inp1= parseInt(prompt("Enter 1 number : "))
-//     inp2=  parseInt(prompt("Enter 2 number : "))
-//     op = prompt("Enter Op : +,-,*,/,%")
-//     if(op=="+"){
-//         alert("Value of 1 : "+inp1+"\n Value of 2 : "+inp2+"\n Result : "+(inp1+inp2))
-//     }
-//     else  if(op=="-"){
-//         alert("Value of 1 : "+inp1+"\n Value of 2 : "+inp2+"\n Result : "+(inp1-inp2))
-//     }
-//     else{
-//         console.log("invalid op")
-//     }
-//     i=prompt("enter 0 if run again ")
-// }
+// 1970
+// millisecond
 
-
-// i = 0
-// COUNTRY = []
-// while (i == 0) {
-//     data = prompt("Enter Dtaa ")
-//     data1 = prompt("Enter Dtaa ")
-//     COUNTRY.push(data)
-//     COUNTRY.push(data1)
-
-//     i = prompt("enter value 0 for run again")
-// }
-
-// document.write("<select>")
-// i = 0
-// while (i < COUNTRY.length) {
-//     document.write("<Option>" + COUNTRY[i] + "</option>")
-//     i++
-// }
-// document.write("</select>")
-
-
-// i = 0
-// while (i == 0) {
-//     var gennumber = (Math.random() * 100).toFixed()
-//     alert(gennumber)
-//     var inp = prompt("Enter Number ")
-//     if (inp == gennumber) {
-//         console.log("win")
-//         break
-//     }
-
-// }
-
-var arr = []
-arr[0]=1
-arr[2]="asad"
-arr[101]="smit"
-console.log(arr)
-
-
-
-
-
+var date = new Date()
+console.log(typeof date)
+console.log(date.toString().substring(0,3))
 
 
 
