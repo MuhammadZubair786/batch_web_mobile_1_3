@@ -1,62 +1,64 @@
-// var i=0
-// do{
-//     console.log(i)
-// }while(i==10)
+// var a=10//global 
 
-// var i=0
-// do{
-//     console.log(i)
-//     i++
+// function abc(){
+//     var a =5 //local 
+//     console.log(a)
 // }
-// while(i<=10)
-
-// array =[1,2,3]
-// i=2;
-// do{
-//     console.log(array[i])//error
-//     i++
-// }while(i>array.length)
-
-// 1 to 10
-// even number
-
-// tenary op:
-// ? :
-
-// var i=30
-// i==10 ? console.log("Hello") : console.log("no")
-
-// button : 
-
-var a = "old smit hydearbad   lanuch new flutter  old course "
-// a=a[0].replaceAll("Lorem","smit")
+// abc()
 // console.log(a)
-// ind = a.indexOf("asad",4)
-// console.log(ind)
 
-// var data = a.substring(0,ind)+"smit"+a.substring(25)
-// console.log(data)
-// a=a.replaceAll("old","new")
-// console.log(a)
-// var b = a.indexOf("old",3)
-// console.log(b)
-// var data = a.substring(0,b)+"new"+a.substring(b+3)
-// console.log(data)
+// ATM CARD : PIN
 
-// var array=["asad","ali","zubair","saqib","asad","asad","khan"]
-// array = array.join()
-// console.log(array)
-// array = array.replaceAll("asad","smit")
-// console.log(array)
-// array=array.split(",")
-// console.log(array)
+/*
+hedfdf
+djkfkjdf
+dkfkljdf
+kdjfkjd*/
 
-// 1970
-// millisecond
+// function b1click(){
+//     alert("call")
+// }
 
-var date = new Date()
-console.log(typeof date)
-console.log(date.toString().substring(0,3))
+// function imgclick(e){
+//     console.log(e.src)
+//     e.src="https://media.istockphoto.com/id/1371751060/photo/grilled-medium-rare-top-sirloin-beef-steak-or-rump-steak-on-a-steel-tray-dark-background-top.jpg?s=612x612&w=is&k=20&c=-m_Op5FJBS5Qor2qcnWg_zL-f33aMPfIn5gnu7IYesI="
 
+//     // alert("img click")
+// }
 
+// function imgclick2(e){
+//     console.log(e.src)
+//     e.src="https://www.shutterstock.com/image-photo/lotus-flower-hd-background-wallpaper-260nw-1273798846.jpg"
 
+//     // alert("img click")
+// }
+
+// function imgch1(a){
+//     // console.log(a.src)
+//     a.src="https://media.istockphoto.com/id/1371751060/photo/grilled-medium-rare-top-sirloin-beef-steak-or-rump-steak-on-a-steel-tray-dark-background-top.jpg?s=612x612&w=is&k=20&c=-m_Op5FJBS5Qor2qcnWg_zL-f33aMPfIn5gnu7IYesI="
+//     a.style.border="10px solid red"
+//     a.style.height="300px"
+//     a.style.width="100%"
+
+// }
+
+// function imgch2(a){
+//     // console.log(a.src)
+//     a.style.borderRadius="50px"
+//     a.src="https://www.shutterstock.com/image-photo/lotus-flower-hd-background-wallpaper-260nw-1273798846.jpg"
+//     a.style.border="0px"
+
+// }
+
+function imgch1(e) {
+
+    var img1 = "https://www.shutterstock.com/image-photo/lotus-flower-hd-background-wallpaper-260nw-1273798846.jpg"
+    var img2 = "https://media.istockphoto.com/id/1371751060/photo/grilled-medium-rare-top-sirloin-beef-steak-or-rump-steak-on-a-steel-tray-dark-background-top.jpg?s=612x612&w=is&k=20&c=-m_Op5FJBS5Qor2qcnWg_zL-f33aMPfIn5gnu7IYesI="
+    if (e.src == img1) {
+        e.src = img2
+
+    }
+    else {
+        e.src = img1
+    }
+}
