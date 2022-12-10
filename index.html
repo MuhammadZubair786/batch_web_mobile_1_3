@@ -1,70 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .hide{
-            display: none;
-        }
-        .show{
-            display: inline;
-        }
-        .red{
-            color: red;
-        }
-    </style>
-   
 </head>
+
 <body>
 
-   
-<form>
-    <input type="text" name=""  id="email" onchange="setemail()">
-    <b class="hide red" id="emailtxt">enter email</b>
-    <br>
-    <input type="password" name=""  id="password"  onchange="setemail()">
-    <b class="hide red" id="passwordtxt">enter password</b>
-    <br>
+    <!-- <h2 id="t1">
+        <B></B>
+        Hello user</h2> -->
 
-    <select id="selectcntry" onchange="setcntry()">
-        <OPtion selected disabled>select country</OPtion>
-        <OPtion value="pak">pak</OPtion>
-        <OPtion value="ind">ind</OPtion>
-        <OPtion value="na">na</OPtion>
-        <OPtion value="sa">sa</OPtion>
-
-    </select>
-
-    <input type="text" size="3" id="setcode"  readonly/>
-
-    <select id="pkprovince" class="hide">
-        <OPtion selected disabled>select country</OPtion>
-        <OPtion value="pak1">pak1</OPtion>
-        <OPtion value="pak2">pak2</OPtion>
-        <OPtion value="pak3">pak3</OPtion>
-        <OPtion value="pak4">pak4</OPtion>
-
-    </select>
-
-    <select id="indprovince" class="hide">
-        <OPtion selected disabled>select country</OPtion>
-        <OPtion value="ind1">ind1</OPtion>
-        <OPtion value="ind1">ind2</OPtion>
-        <OPtion value="ind3">ind3</OPtion>
-        <OPtion value="ind4">ind4</OPtion>
-
-    </select>
-
-    <button  onclick="getdata()">submit</button>
-
-    <!-- <input type="submit" onclick="getdata()"></input> -->
-    <b  class="hide " style="color: green;" id="submittxt">form submit </b>
-</form>
-
-
-    <script src="app.js"></script>
+        <select name="" id="country" onchange="setcntry()" ></select>
+        <select name="" id="province" style="display: none;" onchange="setcity()"></select>
+        <select name="" id="city" style="display: none;"></select>
+        <script src="app.js"></script>
 </body>
+
 </html>
