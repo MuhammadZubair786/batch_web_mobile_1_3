@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <DIV class="container">
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">dishname</label>
+              <input type="text" class="form-control" id="dishname" aria-describedby="emailHelp">
+              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">price</label>
+                <input type="text" class="form-control" id="price" aria-describedby="emailHelp">
+                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Qty</label>
+                <input type="text" class="form-control" id="qty" aria-describedby="emailHelp">
+                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+              </div>
+              <div class="mb-3">
+                <!-- <label for="exampleInputEmail1" class="form-label">dishname</label> -->
+              
+              <div class="row">
+                <div class="col col-lg-4 col-md-4 col-sm-4">
+                    <input type="file" class="form-control" id="dishname" aria-describedby="emailHelp">
+                </div>
+                <div class="col col-lg-4 col-md-4 col-sm-4">
+                    <button class="btn btn-primary form-control" id="upload" disabled>Upload Image</button>
+                    </div>
+              </div> 
+              
+                <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+              </div>
+            <button type="button" class="btn btn-primary" onclick="submit1()" disabled id="submit">Submit</button>
+          </form>
+    </DIV>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-storage.js"></script>
+
+ <script>
+
+     const firebaseConfig = {
+         apiKey: "AIzaSyCpdxs0NjS1MTjpS8D0U96K81wbebWWd64",
+         authDomain: "newproject-8f9ed.firebaseapp.com",
+         projectId: "newproject-8f9ed",
+         storageBucket: "newproject-8f9ed.appspot.com",
+         messagingSenderId: "161876950670",
+         appId: "1:161876950670:web:edc49c62bf9a0899aa93df"
+     };
+
+     firebase.initializeApp(firebaseConfig)
+
+
+
+ </script>
+    <script src="add_product.js"></script>
+</body>
+</html>
