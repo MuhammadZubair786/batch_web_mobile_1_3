@@ -1,175 +1,133 @@
-let baseurl = "https://fakestoreapi.com"
-let product_url = "products"
-let categories = "categories"
-let maindata =[]
-let product_data = document.getElementById("product_data")
-let btn = document.getElementById("btn")
-let loader = document.getElementById("loading")
-let promise = new Promise((res, rej) => {
-    fetch(`${baseurl}/${product_url}`)
-        .then((data) => {
-            if (data) {
-                res(data.json())
-            }
-            else {
-                rej("Not get data")
-            }
-        })
-})
+// let arr1=[1,2,3,4]
+// let arr2 =[3,4,5]
+// let arr4 =["4",3,4,5]
+// let arr3 =[...arr1,"next",...arr2,...arr4]
 
-promise
-    .then((data) => {
-        document.getElementById("loading").style.display = "none"
-        // console.log(data)
-        maindata=data
-        data.map((v, i) => {
+// let obj1={
+//     name:"asad",
+//     class:3
+// }
 
-            console.log(v)
-            product_data.innerHTML += `
-        <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
-        <div class="card" style="height:400px;overflow:hidden" >
-  <img src=${v.image} class="card-img-top" alt="..." style="object-fit: contain;height:200px">
-  <div class="card-body">
-    <h5 class="card-title">${v.title}</h5>
-    <p class="card-text">${v.description}</p>
+// let obj2={
+//     class:4,
+//     school:"abc"
+// }
 
-  </div>
-</div>
-</div>
-        `
-        })
+// let obj3={...obj1,...obj2}
 
-    })
-    .catch((E) => console.log(E))
+// let arr1=[1,2,3,4,7]
+
+// // let a= arr1[0]
+// let c =arr1[]
+// // let [a,b,d,...c]=arr1
+// // console.log(a,b)
+// // console.log(c)
+// let [,,b]= arr1
+
+// let obj1= {
+//     name :"ali",
+//     class1:3
+
+// }
+// let a = obj1["name"]
+// let b = obj1.class
+// let {name,class1}= obj1
 
 
-let categories_promise = new Promise((res, rej) => {
-    fetch(`${baseurl}/${product_url}/${categories}`)
-        .then((data) => {
-            if (data) {
-                res(data.json())
-            }
-            else {
-                rej("Not get data")
-            }
-        })
-})
+// filter => array 
 
-categories_promise.then((data1) => {
-    console.log(data1)
-    data1.map((v, i) => {
-        btn.innerHTML += `
-        <button  type="button" class="col-lg-2 btn btn-success" onclick="get_cat_product(this)"  >${v}</button>`
-    })
-})
-    .catch((e) => {
-        console.log(e)
+// let arr_data =  [0,1,2,3,-4,5,-6,7]
+// let b = arr_data.filter((v)=>v>0)
+// console.log(b)
+// arr_data.map((v,i)=>{
+//     console.log(v)
+// })
 
-    })
-
-let get_cat_product = (p) => {
-    product_data.innerHTML = ""//PRODUCT EMPTY
-    console.log(loader)
-    loader.style.display = "inline"
-    // console.log(maindata)
-    let calldata = maindata.filter((v)=>v.category==p.innerText)
-    console.log(calldata)
-    loader.style.display = "none"
-    calldata.map((v, i) => {
-                    product_data.innerHTML += `
-                <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
-                <div class="card" style="height:400px;overflow:hidden" >
-          <img src=${v.image} class="card-img-top" alt="..." style="object-fit: contain;height:200px">
-          <div class="card-body">
-            <h5 class="card-title">${v.title}</h5>
-            <p class="card-text">${v.description}</p>
-        
-          </div>
-        </div>
-        </div>
-                `
-        
-                })
+// for(let i=0;i<arr_data.length;i++){
+//     if(arr_data[i]>5){
+//         console.log(arr_data[i])
+//     }
+// }
+// for(let i of arr_data){
+//     if(i>5){
+//         console.log(i)
+//     }
+// }
 
 
+// let arr = ["ali","smit","react","asad","baber"]
+// let b = arr.filter((v)=>v[0]=="a")
 
-    // console.log(p.innerText)
-//     let get_product_cat_promise = new Promise((res, rej) => {
-//         fetch(`${baseurl}/${product_url}/category/${p.innerText}`)
-//             .then((data) => {
-//                 if (data) {
-//                     res(data.json())
-//                 }
-//                 else {
-//                     rej("not get data")
-//                 }
-//             })
-//     })
-//     get_product_cat_promise.then((data) => {
-//         console.log(data)
-//         loader.style.display = "none"
-//         data.map((v, i) => {
-//             product_data.innerHTML += `
-//         <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
-//         <div class="card" style="height:400px;overflow:hidden" >
-//   <img src=${v.image} class="card-img-top" alt="..." style="object-fit: contain;height:200px">
-//   <div class="card-body">
-//     <h5 class="card-title">${v.title}</h5>
-//     <p class="card-text">${v.description}</p>
 
-//   </div>
-// </div>
-// </div>
+// let data = [
+//     {
+//         id:"3",
+//         name:"asad",
+//         status:"true",
+//         department:"hr"
+
+//     },
+//     {
+//         id:"1",
+//         name:"asad",
+//         department:"web"
+//     },
+//     {
+//         id:"2",
+//         name:"ali",
+//         status:"true",
+//         department:"hr"
+//     },
+//     {
+//         id:"3",
+//         name:"smit",
+//         department:"admin"
+//     }
+// ]
+// let b = data.filter((v)=>v.department=="hr")
+// for(var j of b){
+//     console.log(j.name)
+// }
+
+
+// let sel = document.getElementById("select")//select kei value get 
+// let div = document.getElementById("name")//data set
+// let getdata = ()=>{
+//     div.innerHTML=""
+//     console.log(sel.value)
+//     let filter_data = data.filter((v)=>v.department==sel.value)
+//     console.log(filter_data)
+//     filter_data.map((v,i)=>{
+//         div.innerHTML+=`
+//         <h1>${v.name}</h1>
 //         `
 
-//         })
 //     })
-//         .catch((e) => {
-//             console.log(e)
-//         })
+   
+// }
 
 
 
-}
+// set=>multiply value =>unique(()
 
-let ALL_PRODUCT = () => {
-    product_data.innerHTML = ""
-    loader.style.display = "inline"
+// let set1 = new Set()
+// set1.add(1)
+// set1.add(2)
+// set1.add(3)
+// set1.add(1)
 
-    let promise = new Promise((res, rej) => {
-        fetch(`${baseurl}/${product_url}`)
-            .then((data) => {
-                if (data) {
-                    res(data.json())
-                }
-                else {
-                    rej("Not get data")
-                }
-            })
-    })
+// console.log(set1)
 
-    promise
-        .then((data) => {
-            document.getElementById("loading").style.display = "none"
-            // console.log(data)
-            data.map((v, i) => {
-                console.log(v)
-                product_data.innerHTML += `
-            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-4">
-            <div class="card" style="height:400px;overflow:hidden" >
-      <img src=${v.image} class="card-img-top" alt="..." style="object-fit: contain;height:200px">
-      <div class="card-body">
-        <h5 class="card-title">${v.title}</h5>
-        <p class="card-text">${v.description}</p>
-    
-      </div>
-    </div>
-    </div>
-            `
-            })
+// let set1 = ([1,2,3,5])
+// let set2 = ([3,4])
+// let set3 = new Set([...set1,...set2])
+// console.log(set3)
 
-        })
-        .catch((E) => console.log(E))
+instersetcion,difference
 
 
-}
+
+
+
+
+
